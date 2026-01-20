@@ -141,17 +141,21 @@
         </div>
     </section>
 
-    <!-- CONTACT -->
-    <form name="contact" method="POST" data-netlify="true" id="contact">
-        <h2 class="section-title">Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-    </form>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Me</h2>
 
+    <form name="contact" method="POST" data-netlify="true">
+        <!-- REQUIRED for Netlify -->
+        <input type="hidden" name="form-name" value="contact">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
     <footer>
         <p>© 2026 Amina. All Rights Reserved.</p>
     </footer>
@@ -230,4 +234,5 @@ certificatesGallery.style.display = 'none';
 </body>
 
 </html>
+
 
