@@ -439,7 +439,7 @@ span{
 }
 
 .carousel-item img{
-    width: 100%;
+    width: 300px;
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
@@ -528,4 +528,5 @@ footer{
     .section-title{
         font-size: 3rem;
     }
+
 }
